@@ -1,0 +1,12 @@
+<?php
+/** @var \Perspective\Them15ex2p1\Block\Template $block */
+$viewModel = $block->getViewModel();
+ 
+$currentProduct = $viewModel->getCurrentProduct();
+
+/* if ($currentProduct->getData('social')== 1 && $viewModel->isEnabled()):
+   echo('<h2>'. $currentProduct->getName() . ' - SOCIAL!!!'. '</h2>' . '<br />');
+   echo '<b>Скидка на социальный продукт: </b>' . $viewModel->getSocial(). '%' . '<br />';
+   echo '<b>Стоимость с учетом скидки: </b>' . $currentProduct->getFinalPrice() - ($currentProduct->getFinalPrice() * $viewModel->getSocial()/100). '$' . '<br />';
+endif; */
+?>

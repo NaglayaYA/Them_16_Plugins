@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+
+    <menu>
+
+        <add id="Perspective_Them16price::perspective" 
+            title="Them 16 Price" 
+            module="Perspective_Them16price" 
+            sortOrder="51" 
+            resource="Perspective_Them16price::perspective"/>
+
+        <add id="Perspective_Them16price::perspective_configuration" 
+            title="Configuration" 
+            module="Perspective_Them16price" 
+            sortOrder="99" 
+            parent="Perspective_Them16price::perspective" 
+            action="adminhtml/system_config/edit/section/price" 
+            resource="Perspective_Them16price::perspective_configuration"/>
+
+    </menu>
+
+</config>
